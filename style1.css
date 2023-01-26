@@ -190,10 +190,10 @@ h2 {
     font-weight: 400;
     /* line-height: 40px; */
     letter-spacing: 0em;
-    border: 2px solid;
-    /* padding: 30px; */
-    border-radius: 30px;
-    background-color: rgba(200, 120, 47, 0.46);
+        /* padding: 30px; */
+    /* margin: 30px; */
+    
+
 }
 
 em {
@@ -343,7 +343,6 @@ footer {
     width: 87%;
     height: 250px;
     margin: 100px;
-    border: 2px solid #453425;
     border-radius: 20px;
 }
 
@@ -365,7 +364,7 @@ footer {
 h3 {
     text-transform: uppercase;
     font-family: 'TurretRoad-Bold', sans-serif;
-    color: #F97F10;
+    color: black;
     font-size: 30px;
     text-align: center;
     font-weight: 800;
@@ -374,7 +373,7 @@ h3 {
 b {
     text-transform: uppercase;
     font-family: 'TurretRoad-Bold', sans-serif;
-    color: #F97F10;
+    color: black;
     font-size: 30px;
     text-align: center;
     font-weight: 800;
@@ -494,7 +493,6 @@ p {
         font-weight: 400;
         letter-spacing: 0em;
         border-radius: 20px;
-
     }
 
     #equipe {
@@ -506,9 +504,7 @@ p {
     .photos {
         display: flex;
     }
-
     
-
     .container {
         position: relative;
         display: flex;
@@ -529,15 +525,10 @@ p {
     #formulaire {
 
         width: 390px;
-
         margin: 0;
-
         padding: 40px 0;
-
         border: 1px solid #CCC;
-
         border-radius: 20px;
-
         background-image: url(./img/header.jpg);
     }
 
