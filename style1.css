@@ -1,0 +1,624 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: 'Badscript-regular';
+    src: url(./fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'TurretRoad-Bold';
+    src: url(./fonts/TurretRoad-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OrelegaOne-Regular';
+    src: url(./fonts/OrelegaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Volkhov-Bold';
+    src: url(./fonts/Volkhov-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+body {
+    background-color: #F97F10;
+    overflow: auto;
+}
+
+#header {
+    background-color: #453425;
+
+    overflow: auto;
+}
+
+#logo1 {
+    float: left;
+    display: block;
+    height: 100%;
+    width: 250px;
+}
+
+nav {
+    float: right;
+    font-size: .5rem;
+    line-height: 250px;
+}
+
+#menu {
+    list-style: none;
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 100px;
+}
+
+#menu li a {
+    padding: 0 50px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+    height: 29px;
+    line-height: 24px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#titre {
+
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 80px;
+    width: auto;
+    height: 75px;
+    font-family: 'Badscript-regular', sans-serif;
+    font-style: italic;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+}
+
+#img1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img2 {
+    position: absolute;
+    left: 20px;
+    top: 250px;
+}
+
+#photos1 {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 400px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #3D3126;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    padding: 16px 32px;
+    border-radius: 20px;
+}
+
+h2 {
+
+    Width: 2068px;
+    height: 158px;
+    font-family: 'Badscript-regular', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 158px;
+    text-align: center;
+    color: #000000;
+}
+
+#presentation {
+
+    width: 800px;
+    height: 600px;
+    float: right;
+    margin: auto;
+}
+
+.text1 {
+    /* margin: 100px; */
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    /* line-height: 40px; */
+    letter-spacing: 0em;
+    border: 2px solid;
+    /* padding: 30px; */
+    border-radius: 30px;
+    background-color: rgba(200, 120, 47, 0.46);
+}
+
+em {
+    font-family: 'TurretRoad-Bold', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #F97F10;
+    text-shadow: 0 5px black;
+}
+
+.photos {
+    display: flex;
+    width: 50%;
+}
+
+
+#moi {
+    background: url(./img/najia.jpg);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    margin: 80px;
+}
+
+#elisa {
+    background-image: url(./img/elisa.jpg);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    margin: 100px;
+}
+
+.slide1 .slide2 .slide3 .slide5 {
+    position: absolute;
+
+}
+
+.slider {
+    width: 100%;
+}
+
+.photo-slider {
+
+    display: flex;
+    position: relative;
+    animation-duration: 8s;
+    /* animation-iteration-count: 2; */
+    animation-name: anim_slide;
+    /* animation-timing-function: infinite; */
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim_slide {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: -1200px;
+    }
+}
+
+h3 {
+    color: #FF7E07;
+    text-transform: uppercase;
+    font-family: 'OrelegaOne-Regular', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px;
+}
+
+#formulaire {
+
+    width: 80%;
+    padding: 70px;
+    margin: 90px;
+    border: 1px solid #CCC;
+    border-radius: 30px;
+    background-image: url(./img/header.jpg);
+}
+
+label {
+    font-family: 'OrelegaOne-Regular', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 26px;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #C8782F4A;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    background-color: #C8782F4A;
+    border-radius: 10px;
+}
+
+#message {
+    font-size: 25px;
+    color: #000000;
+    margin: 20px;
+}
+
+.telephone {
+    width: 440px;
+}
+
+#bouton {
+    width: 140px;
+    height: 35px;
+    font-size: 25px;
+    background-color: #3D3126;
+    border-radius: 20px;
+    color: #F97F10;
+    text-transform: uppercase;
+}
+
+.img3 {
+    float: right;
+
+}
+
+footer {
+    width: 100%;
+
+}
+
+#contact {
+    display: flex;
+    width: 87%;
+    height: 250px;
+    margin: 100px;
+    border: 2px solid #453425;
+    border-radius: 20px;
+}
+
+.contact1 {
+
+    width: 400px;
+    height: 250px;
+    background: rgba(200, 120, 47, 0.46);
+    text-align: center;
+    position: relative;
+
+}
+
+.contact1 table {
+    height: 200px;
+    width: 100%;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'TurretRoad-Bold', sans-serif;
+    color: #F97F10;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+b {
+    text-transform: uppercase;
+    font-family: 'TurretRoad-Bold', sans-serif;
+    color: #F97F10;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+td {
+
+    font-family: 'Volkhov-Bold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.reseaux {
+    margin: 0;
+    padding: 40px;
+
+}
+
+p {
+    font-family: 'Volkhov-Bold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#tel::before {
+    content: "";
+    background: url(./img/tel.png);
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+
+}
+
+#tel {
+    position: relative;
+}
+
+#mail::before {
+    content: "";
+    background: url(./img/email.png);
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+
+}
+
+#mail {
+    position: relative;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 390px) {
+
+    #logo1 {
+        width: 150px;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    h1 {
+        display: inline-block;
+
+    }
+
+    .container {
+        overflow: auto;
+    }
+
+    .container img {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 60%;
+
+    }
+
+    .text {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-family: 'Badscript-regular', sans-serif;
+        font-style: italic;
+        font-weight: 200;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #000000;
+
+    }
+
+    #presentation {
+
+    margin-left: 3%;
+    height: 600px;
+
+    }
+
+    .text1 {
+
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: 0em;
+        border-radius: 20px;
+
+    }
+
+    #equipe {
+
+        display: flex;
+        height: 600px;
+    }
+
+    .photos {
+        display: flex;
+    }
+
+    
+
+    .container {
+        position: relative;
+        display: flex;
+
+    }
+
+    .slider {
+
+        display: none;
+
+    }
+
+    .form1 {
+
+        overflow: auto;
+    }
+
+    #formulaire {
+
+        width: 390px;
+
+        margin: 0;
+
+        padding: 40px 0;
+
+        border: 1px solid #CCC;
+
+        border-radius: 20px;
+
+        background-image: url(./img/header.jpg);
+    }
+
+    h3 {
+    
+        width: 300px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .telephone {
+        width: 200px;
+    }
+
+    #name #mail #phonenumber {
+
+        flex-direction: column;
+    }
+
+    label {
+        max-width: 120px;
+        margin: 20px;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    textarea {
+        width: 300px;
+        height: 80px;
+    }
+
+    .img3 {
+        display: none;
+        overflow: hidden;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+
+    }
+
+    #bouton {
+        height: 30px;
+        margin: 70px;
+        width: 200px;
+    }
+
+    p {
+        text-align: center;
+        width: 360px;
+    }
+
+    #contact {
+        width: 90%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        margin: 0 0 0 4.5%;
+        height: auto;
+    }
+
+    #contact h3 {
+        color: #000;
+    }
+
+    .contact1 {
+        width: 100%;
+    }
+
+    .contact1 table b {
+        color: #000;
+    }
+
+    .contact1 h3 {
+        margin: 0 auto;
+    }
+
+
+
+}
